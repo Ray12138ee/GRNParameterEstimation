@@ -1,0 +1,20 @@
+experiment:
+  model_config: configs/grn_config.yaml
+  n_replicates: 3
+  name: grn_50genes_synthetic
+  noise_modes:
+  - medium
+  observation:
+    fraction_observed: 0.3
+    mode: subset
+    random_seed: 123
+  output_dir: outputs/grn_50genes_synthetic
+  perturbation_modes:
+  - kd_full
+  petab:
+    base_condition_id: cond
+    base_observable_id: p
+    generate_tables: true
+  random_seed: 2
+  time_sampling_modes:
+  - sparse

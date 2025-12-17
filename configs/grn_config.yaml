@@ -1,0 +1,144 @@
+# configs/grn_config.yaml
+
+model:
+  type: "grn"
+  n_genes: 200          
+  indexing: "1-based"     
+
+
+# 1) Parameter sampling distribution (uniform for all genes)
+priors:
+  beta:
+    dist: loguniform
+    low: 0.5
+    high: 2.0
+
+  gamma:
+    dist: loguniform
+    low: 0.01
+    high: 0.2
+
+  k:
+    dist: loguniform
+    low: 0.5
+    high: 2.0
+
+  delta:
+    dist: loguniform
+    low: 0.01
+    high: 0.2
+
+  alpha0:
+    dist: uniform
+    low: 0.0
+    high: 0.2
+
+  m0:
+    dist: uniform
+    low: 0.0
+    high: 0.1
+
+  p0:
+    dist: uniform
+    low: 0.0
+    high: 0.1
+
+  # 每条边的 Hill 参数
+  K:
+    dist: loguniform
+    low: 1.0
+    high: 100.0
+
+  n:
+    dist: choice
+    choices: [1, 2, 3, 4]
+
+
+# 2.Overall control of the regulatory
+network:
+  type: "erdos_renyi"    # 现在先做 ER 随机图（/sf）
+  edge_prob: 0.3         # 任意一条 j->i 边存在的概率
+  allow_self: false      # 是否允许自调控 i->i
+  max_in_degree: 3       # 每个基因的最大入度（超过就丢弃多余边）
+  min_in_degree: 0       # 每个基因的最小入度（可以先设 0）
+  frac_activation: 0.6   # 在存在边的情况下，这条边是激活的概率
+                         # 抑制概率 = 1 - frac_activation
+
+
+# 3) Time sampling design
+time_sampling:
+  # 当前使用哪一种：dense / medium / sparse
+  mode: "dense"
+
+  # 三种预设时间方案
+  presets:
+    dense:
+      n_timepoints: 21
+      time_start: 0.0
+      time_end: 50.0
+
+    medium:
+      n_timepoints: 11
+      time_start: 0.0
+      time_end: 50.0
+
+    sparse:
+      n_timepoints: 6
+      time_start: 0.0
+      time_end: 50.0
+
+
+# 4) Perturbation design
+perturbation:
+  # 当前使用哪一种：
+  # baseline       : 原始 m0, p0
+  # oe             : overexpression, 渐进式放大
+  # kd             : knockdown，渐进式抑制 (factor 0.5)
+  # kd_full        : full knockout，极端版 (p0=0)
+  mode: "baseline"
+
+  presets:
+    baseline:
+      type: "baseline"
+
+    oe:
+      type: "overexpression"
+      n_genes: 5          # 每个条件随机选 5 个基因作为 OE
+      factor: 3.0         # p0 -> 3 * p0
+
+    kd:
+      type: "knockdown"
+      n_genes: 5          # 渐进式抑制
+      factor: 0.5         # p0 -> 0.5 * p0
+
+    kd_full:
+      type: "knockdown_full"
+      n_genes: 5          # full KO
+      # factor 隐含为 0：p0 -> 0.0
+
+
+# 5) Noise level design
+noise:
+  # 当前使用哪一种：
+  # low           : 5% 相对噪声
+  # medium        : 10% 相对噪声（baseline）
+  # high          : 20% 相对噪声
+  # abs_baseline  : 带明显“绝对噪声基线”的版本
+  mode: "medium"
+
+  presets:
+    low:
+      sigma_rel: 0.05       # 5% relative noise
+      abs_frac: 0.01        # 少量绝对噪声基线
+
+    medium:
+      sigma_rel: 0.10       # 10% relative noise
+      abs_frac: 0.01
+
+    high:
+      sigma_rel: 0.20       # 20% relative noise
+      abs_frac: 0.01
+
+    abs_baseline:
+      sigma_rel: 0.10       # 仍然是 10% relative
+      abs_frac: 0.05        # 但绝对噪声占比更大（绝对噪声基线更明显）               

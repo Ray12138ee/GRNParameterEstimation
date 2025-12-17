@@ -1,0 +1,7 @@
+observableId	observableFormula	noiseFormula	noiseDistribution	observableName
+obs_p1	p1	noiseParameter1*abs(observable)+noiseParameter2	normal	protein_1
+obs_p5	p5	noiseParameter1*abs(observable)+noiseParameter2	normal	protein_5
+obs_p11	p11	noiseParameter1*abs(observable)+noiseParameter2	normal	protein_11
+obs_p17	p17	noiseParameter1*abs(observable)+noiseParameter2	normal	protein_17
+obs_p18	p18	noiseParameter1*abs(observable)+noiseParameter2	normal	protein_18
+obs_p19	p19	noiseParameter1*abs(observable)+noiseParameter2	normal	protein_19

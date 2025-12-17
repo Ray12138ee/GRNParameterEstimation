@@ -1,0 +1,65 @@
+# ================================
+# GRN Synthetic Experiment Config
+# ================================
+
+experiment:
+  name: "grn_50genes_synthetic"
+  output_dir: "outputs/grn_50genes_synthetic"
+  random_seed: 0
+
+  # --- 模型配置文件 ---
+  model_config: "configs/grn_config.yaml"
+
+
+  # ================================
+  # 1) 观测模型（Observation Model）
+  # ================================
+  observation:
+    mode: "subset"          # "subset" or "all"
+    fraction_observed: 0.3  # subset 时，观测 30% 基因的蛋白
+    random_seed: 123        # 控制观测子集
+
+
+  # ================================
+  # 2) 时间采样模式（Time Sampling）
+  # ================================
+  # 会与 perturbation / noise 全部组合
+  time_sampling_modes:
+    - "dense"
+    - "medium"
+    - "sparse"
+
+
+  # ================================
+  # 3) 条件（Perturbation Conditions）
+  # ================================
+  perturbation_modes:
+    - "baseline"
+    - "oe"
+    - "kd"
+    - "kd_full"
+
+
+  # ================================
+  # 4) 噪声模式（Noise Levels）
+  # ================================
+  noise_modes:
+    - "low"
+    - "medium"
+    - "high"
+    - "abs_baseline"
+
+
+  # ================================
+  # 5) 每个组合的技术重复（Replicates）
+  # ================================
+  n_replicates: 3
+
+
+  # ================================
+  # 6) 未来用于 PEtab 的设置（现在可忽略）
+  # ================================
+  petab:
+    generate_tables: true
+    base_condition_id: "cond"
+    base_observable_id: "p"

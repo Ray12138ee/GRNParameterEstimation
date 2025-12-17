@@ -1,0 +1,13 @@
+{
+  "petab_yaml": "/root/code/data_gene100/net1__obs0.3__t_dense__p_baseline/petab/petab.yaml",
+  "backend": "fallback",
+  "backend_error": null,
+  "optimizer": "scipy",
+  "n_starts": 10,
+  "n_procs": 8,
+  "n_valid_starts": 10,
+  "best_fval": 5781331.153060429,
+  "success_rate": 1.0,
+  "fallback_model": "per-observable constant",
+  "n_params": 30
+}

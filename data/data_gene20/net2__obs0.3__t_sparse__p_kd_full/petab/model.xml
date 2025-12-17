@@ -1,0 +1,2468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model id="grn_model">
+    <listOfCompartments>
+      <compartment id="cell" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="m1" compartment="cell" initialAmount="0.0440504518748698" constant="false"/>
+      <species id="m2" compartment="cell" initialAmount="0.0302303366309866" constant="false"/>
+      <species id="m3" compartment="cell" initialAmount="0.0613327676490399" constant="false"/>
+      <species id="m4" compartment="cell" initialAmount="0.0285432605539295" constant="false"/>
+      <species id="m5" compartment="cell" initialAmount="0.090963301008442" constant="false"/>
+      <species id="m6" compartment="cell" initialAmount="0.0961869958198077" constant="false"/>
+      <species id="m7" compartment="cell" initialAmount="0.00594348654359025" constant="false"/>
+      <species id="m8" compartment="cell" initialAmount="0.0209059719154979" constant="false"/>
+      <species id="m9" compartment="cell" initialAmount="0.0563023183255908" constant="false"/>
+      <species id="m10" compartment="cell" initialAmount="0.077066022948398" constant="false"/>
+      <species id="m11" compartment="cell" initialAmount="0.00640242313243812" constant="false"/>
+      <species id="m12" compartment="cell" initialAmount="0.018480268442988" constant="false"/>
+      <species id="m13" compartment="cell" initialAmount="0.0456720121690689" constant="false"/>
+      <species id="m14" compartment="cell" initialAmount="0.0668690758550173" constant="false"/>
+      <species id="m15" compartment="cell" initialAmount="0.0903327926988812" constant="false"/>
+      <species id="m16" compartment="cell" initialAmount="0.086697296354155" constant="false"/>
+      <species id="m17" compartment="cell" initialAmount="0.0793755415418258" constant="false"/>
+      <species id="m18" compartment="cell" initialAmount="0.00527321433765511" constant="false"/>
+      <species id="m19" compartment="cell" initialAmount="0.0976636493292188" constant="false"/>
+      <species id="m20" compartment="cell" initialAmount="0.0614627949151157" constant="false"/>
+      <species id="p1" compartment="cell" initialAmount="0.00861158152014501" constant="false"/>
+      <species id="p2" compartment="cell" initialAmount="0.0254928775389765" constant="false"/>
+      <species id="p3" compartment="cell" initialAmount="0.0620754084566291" constant="false"/>
+      <species id="p4" compartment="cell" initialAmount="0.038564011688364" constant="false"/>
+      <species id="p5" compartment="cell" initialAmount="0.0446603475490542" constant="false"/>
+      <species id="p6" compartment="cell" initialAmount="0.080458506559875" constant="false"/>
+      <species id="p7" compartment="cell" initialAmount="0.0824030977414779" constant="false"/>
+      <species id="p8" compartment="cell" initialAmount="0.0546786980180308" constant="false"/>
+      <species id="p9" compartment="cell" initialAmount="0.0792451104054445" constant="false"/>
+      <species id="p10" compartment="cell" initialAmount="0.0406004929093054" constant="false"/>
+      <species id="p11" compartment="cell" initialAmount="0.097448183731841" constant="false"/>
+      <species id="p12" compartment="cell" initialAmount="0.0605159165426036" constant="false"/>
+      <species id="p13" compartment="cell" initialAmount="0.0967697982686818" constant="false"/>
+      <species id="p14" compartment="cell" initialAmount="0.00439876920563971" constant="false"/>
+      <species id="p15" compartment="cell" initialAmount="0.08826926528427" constant="false"/>
+      <species id="p16" compartment="cell" initialAmount="0.0559377187544877" constant="false"/>
+      <species id="p17" compartment="cell" initialAmount="0.0713639030958797" constant="false"/>
+      <species id="p18" compartment="cell" initialAmount="0.019259497537902" constant="false"/>
+      <species id="p19" compartment="cell" initialAmount="0.0548691375990993" constant="false"/>
+      <species id="p20" compartment="cell" initialAmount="0.0289277924121919" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="beta_1" value="0.718581783902794" constant="true"/>
+      <parameter id="beta_2" value="0.75627471316879" constant="true"/>
+      <parameter id="beta_3" value="1.54590480355845" constant="true"/>
+      <parameter id="beta_4" value="0.567948446104368" constant="true"/>
+      <parameter id="beta_5" value="1.14885844712272" constant="true"/>
+      <parameter id="beta_6" value="1.37279961526218" constant="true"/>
+      <parameter id="beta_7" value="0.648780402693452" constant="true"/>
+      <parameter id="beta_8" value="0.539723816031545" constant="true"/>
+      <parameter id="beta_9" value="0.732011762360739" constant="true"/>
+      <parameter id="beta_10" value="1.24389613837113" constant="true"/>
+      <parameter id="beta_11" value="1.09015352746073" constant="true"/>
+      <parameter id="beta_12" value="0.615625342246295" constant="true"/>
+      <parameter id="beta_13" value="0.910834966257782" constant="true"/>
+      <parameter id="beta_14" value="1.2645241562762" constant="true"/>
+      <parameter id="beta_15" value="0.898486882643455" constant="true"/>
+      <parameter id="beta_16" value="1.20277667741765" constant="true"/>
+      <parameter id="beta_17" value="1.91172088844535" constant="true"/>
+      <parameter id="beta_18" value="1.28889044858865" constant="true"/>
+      <parameter id="beta_19" value="0.860501532159438" constant="true"/>
+      <parameter id="beta_20" value="0.648197400219514" constant="true"/>
+      <parameter id="gamma_1" value="0.0281906573731355" constant="true"/>
+      <parameter id="gamma_2" value="0.0462287511564854" constant="true"/>
+      <parameter id="gamma_3" value="0.144374393951674" constant="true"/>
+      <parameter id="gamma_4" value="0.10210146009084" constant="true"/>
+      <parameter id="gamma_5" value="0.0259369121121663" constant="true"/>
+      <parameter id="gamma_6" value="0.159380030227033" constant="true"/>
+      <parameter id="gamma_7" value="0.0409890531482238" constant="true"/>
+      <parameter id="gamma_8" value="0.0799099876344355" constant="true"/>
+      <parameter id="gamma_9" value="0.0137873221742417" constant="true"/>
+      <parameter id="gamma_10" value="0.0136777387842615" constant="true"/>
+      <parameter id="gamma_11" value="0.018309970541843" constant="true"/>
+      <parameter id="gamma_12" value="0.141480164181846" constant="true"/>
+      <parameter id="gamma_13" value="0.0766399305973546" constant="true"/>
+      <parameter id="gamma_14" value="0.127315690686417" constant="true"/>
+      <parameter id="gamma_15" value="0.0689335931391155" constant="true"/>
+      <parameter id="gamma_16" value="0.0338005567510771" constant="true"/>
+      <parameter id="gamma_17" value="0.0469984706090924" constant="true"/>
+      <parameter id="gamma_18" value="0.0591681264103252" constant="true"/>
+      <parameter id="gamma_19" value="0.132324834097517" constant="true"/>
+      <parameter id="gamma_20" value="0.0371615094266082" constant="true"/>
+      <parameter id="k_1" value="1.72247162849886" constant="true"/>
+      <parameter id="k_2" value="1.17075068066232" constant="true"/>
+      <parameter id="k_3" value="1.57867287256334" constant="true"/>
+      <parameter id="k_4" value="0.997308747823172" constant="true"/>
+      <parameter id="k_5" value="1.30589261166312" constant="true"/>
+      <parameter id="k_6" value="0.799988268811743" constant="true"/>
+      <parameter id="k_7" value="1.0321531180554" constant="true"/>
+      <parameter id="k_8" value="0.674760198407783" constant="true"/>
+      <parameter id="k_9" value="0.574909670713179" constant="true"/>
+      <parameter id="k_10" value="0.527487298320776" constant="true"/>
+      <parameter id="k_11" value="1.32307876743043" constant="true"/>
+      <parameter id="k_12" value="0.941387917609292" constant="true"/>
+      <parameter id="k_13" value="1.73564066627525" constant="true"/>
+      <parameter id="k_14" value="1.59147711259139" constant="true"/>
+      <parameter id="k_15" value="0.852747348419696" constant="true"/>
+      <parameter id="k_16" value="1.92833745119142" constant="true"/>
+      <parameter id="k_17" value="1.13612692843124" constant="true"/>
+      <parameter id="k_18" value="1.44569841823198" constant="true"/>
+      <parameter id="k_19" value="0.879276439540162" constant="true"/>
+      <parameter id="k_20" value="0.656260189869315" constant="true"/>
+      <parameter id="delta_1" value="0.0167296574723277" constant="true"/>
+      <parameter id="delta_2" value="0.0172089643825758" constant="true"/>
+      <parameter id="delta_3" value="0.0610336143921594" constant="true"/>
+      <parameter id="delta_4" value="0.0140132452566279" constant="true"/>
+      <parameter id="delta_5" value="0.0106146207404864" constant="true"/>
+      <parameter id="delta_6" value="0.121270184053692" constant="true"/>
+      <parameter id="delta_7" value="0.0134690463161759" constant="true"/>
+      <parameter id="delta_8" value="0.0385677227359329" constant="true"/>
+      <parameter id="delta_9" value="0.0432067197951421" constant="true"/>
+      <parameter id="delta_10" value="0.0641199254568495" constant="true"/>
+      <parameter id="delta_11" value="0.0452624397634087" constant="true"/>
+      <parameter id="delta_12" value="0.165772140870497" constant="true"/>
+      <parameter id="delta_13" value="0.0946865903405558" constant="true"/>
+      <parameter id="delta_14" value="0.0558982414481256" constant="true"/>
+      <parameter id="delta_15" value="0.0635461970817497" constant="true"/>
+      <parameter id="delta_16" value="0.045607753940428" constant="true"/>
+      <parameter id="delta_17" value="0.179963342997038" constant="true"/>
+      <parameter id="delta_18" value="0.0197172937311355" constant="true"/>
+      <parameter id="delta_19" value="0.0787852601241167" constant="true"/>
+      <parameter id="delta_20" value="0.0527469593959042" constant="true"/>
+      <parameter id="alpha0_1" value="0.00840235781373722" constant="true"/>
+      <parameter id="alpha0_2" value="0.0592299999567467" constant="true"/>
+      <parameter id="alpha0_3" value="0.185433387080318" constant="true"/>
+      <parameter id="alpha0_4" value="0.156912971486" constant="true"/>
+      <parameter id="alpha0_5" value="0.00256621870607765" constant="true"/>
+      <parameter id="alpha0_6" value="0.059325265932549" constant="true"/>
+      <parameter id="alpha0_7" value="0.00196106980931277" constant="true"/>
+      <parameter id="alpha0_8" value="0.165493388595616" constant="true"/>
+      <parameter id="alpha0_9" value="0.0220735184618126" constant="true"/>
+      <parameter id="alpha0_10" value="0.0114910357549639" constant="true"/>
+      <parameter id="alpha0_11" value="0.19637666863902" constant="true"/>
+      <parameter id="alpha0_12" value="0.0891739758830428" constant="true"/>
+      <parameter id="alpha0_13" value="0.0636785998127352" constant="true"/>
+      <parameter id="alpha0_14" value="0.00980267791261842" constant="true"/>
+      <parameter id="alpha0_15" value="0.0779190568597644" constant="true"/>
+      <parameter id="alpha0_16" value="0.0732078114524276" constant="true"/>
+      <parameter id="alpha0_17" value="0.104696157611093" constant="true"/>
+      <parameter id="alpha0_18" value="0.00135709329629659" constant="true"/>
+      <parameter id="alpha0_19" value="0.0295925760580437" constant="true"/>
+      <parameter id="alpha0_20" value="0.0419773051496813" constant="true"/>
+      <parameter id="K_1_17" value="83.3791612116557" constant="true"/>
+      <parameter id="n_1_17" value="2" constant="true"/>
+      <parameter id="K_1_10" value="29.983691536772" constant="true"/>
+      <parameter id="n_1_10" value="2" constant="true"/>
+      <parameter id="K_1_7" value="3.30311162964863" constant="true"/>
+      <parameter id="n_1_7" value="4" constant="true"/>
+      <parameter id="K_2_6" value="1.41927450061456" constant="true"/>
+      <parameter id="n_2_6" value="3" constant="true"/>
+      <parameter id="K_2_13" value="1.21457948908454" constant="true"/>
+      <parameter id="n_2_13" value="3" constant="true"/>
+      <parameter id="K_2_18" value="9.43727890481729" constant="true"/>
+      <parameter id="n_2_18" value="3" constant="true"/>
+      <parameter id="K_3_6" value="94.5596116433557" constant="true"/>
+      <parameter id="n_3_6" value="4" constant="true"/>
+      <parameter id="K_3_17" value="15.7676293921831" constant="true"/>
+      <parameter id="n_3_17" value="3" constant="true"/>
+      <parameter id="K_3_16" value="1.35130922454717" constant="true"/>
+      <parameter id="n_3_16" value="2" constant="true"/>
+      <parameter id="K_4_5" value="6.88892920254408" constant="true"/>
+      <parameter id="n_4_5" value="2" constant="true"/>
+      <parameter id="K_4_9" value="1.31087866135056" constant="true"/>
+      <parameter id="n_4_9" value="2" constant="true"/>
+      <parameter id="K_4_19" value="4.43090232293484" constant="true"/>
+      <parameter id="n_4_19" value="2" constant="true"/>
+      <parameter id="K_5_10" value="7.23872390351187" constant="true"/>
+      <parameter id="n_5_10" value="4" constant="true"/>
+      <parameter id="K_5_18" value="26.2343063712571" constant="true"/>
+      <parameter id="n_5_18" value="1" constant="true"/>
+      <parameter id="K_5_9" value="1.38324185326777" constant="true"/>
+      <parameter id="n_5_9" value="2" constant="true"/>
+      <parameter id="K_6_3" value="18.3997843454261" constant="true"/>
+      <parameter id="n_6_3" value="3" constant="true"/>
+      <parameter id="K_6_5" value="35.7209417933117" constant="true"/>
+      <parameter id="n_6_5" value="2" constant="true"/>
+      <parameter id="K_6_7" value="42.4833754929864" constant="true"/>
+      <parameter id="n_6_7" value="1" constant="true"/>
+      <parameter id="K_7_20" value="1.27390461514692" constant="true"/>
+      <parameter id="n_7_20" value="2" constant="true"/>
+      <parameter id="K_7_4" value="22.5833356549727" constant="true"/>
+      <parameter id="n_7_4" value="3" constant="true"/>
+      <parameter id="K_7_18" value="1.93216953715863" constant="true"/>
+      <parameter id="n_7_18" value="1" constant="true"/>
+      <parameter id="K_8_4" value="2.12702409481675" constant="true"/>
+      <parameter id="n_8_4" value="4" constant="true"/>
+      <parameter id="K_8_15" value="2.55657525759537" constant="true"/>
+      <parameter id="n_8_15" value="1" constant="true"/>
+      <parameter id="K_8_10" value="85.5502291110276" constant="true"/>
+      <parameter id="n_8_10" value="1" constant="true"/>
+      <parameter id="K_9_8" value="17.369690144056" constant="true"/>
+      <parameter id="n_9_8" value="2" constant="true"/>
+      <parameter id="K_9_15" value="1.6144072712957" constant="true"/>
+      <parameter id="n_9_15" value="3" constant="true"/>
+      <parameter id="K_9_10" value="13.3747868359278" constant="true"/>
+      <parameter id="n_9_10" value="3" constant="true"/>
+      <parameter id="K_10_17" value="13.824924734364" constant="true"/>
+      <parameter id="n_10_17" value="1" constant="true"/>
+      <parameter id="K_10_12" value="2.1850475830828" constant="true"/>
+      <parameter id="n_10_12" value="2" constant="true"/>
+      <parameter id="K_10_20" value="44.4879419809694" constant="true"/>
+      <parameter id="n_10_20" value="4" constant="true"/>
+      <parameter id="K_11_5" value="1.46635775472587" constant="true"/>
+      <parameter id="n_11_5" value="2" constant="true"/>
+      <parameter id="K_11_19" value="25.7089754676385" constant="true"/>
+      <parameter id="n_11_19" value="3" constant="true"/>
+      <parameter id="K_11_6" value="20.6402485421752" constant="true"/>
+      <parameter id="n_11_6" value="2" constant="true"/>
+      <parameter id="K_12_2" value="77.254724532394" constant="true"/>
+      <parameter id="n_12_2" value="3" constant="true"/>
+      <parameter id="K_12_20" value="34.4485610765658" constant="true"/>
+      <parameter id="n_12_20" value="1" constant="true"/>
+      <parameter id="K_12_5" value="1.55422138592323" constant="true"/>
+      <parameter id="n_12_5" value="2" constant="true"/>
+      <parameter id="K_13_19" value="1.14876067187534" constant="true"/>
+      <parameter id="n_13_19" value="2" constant="true"/>
+      <parameter id="K_13_5" value="48.1533781475265" constant="true"/>
+      <parameter id="n_13_5" value="2" constant="true"/>
+      <parameter id="K_13_2" value="11.0115451782901" constant="true"/>
+      <parameter id="n_13_2" value="4" constant="true"/>
+      <parameter id="K_14_19" value="2.75289027053155" constant="true"/>
+      <parameter id="n_14_19" value="1" constant="true"/>
+      <parameter id="K_14_16" value="2.23216048077481" constant="true"/>
+      <parameter id="n_14_16" value="1" constant="true"/>
+      <parameter id="K_14_7" value="10.5489425354353" constant="true"/>
+      <parameter id="n_14_7" value="4" constant="true"/>
+      <parameter id="K_15_12" value="25.1612629510196" constant="true"/>
+      <parameter id="n_15_12" value="4" constant="true"/>
+      <parameter id="K_15_5" value="1.66984428756156" constant="true"/>
+      <parameter id="n_15_5" value="4" constant="true"/>
+      <parameter id="K_15_1" value="60.6769898110415" constant="true"/>
+      <parameter id="n_15_1" value="3" constant="true"/>
+      <parameter id="K_16_7" value="73.0462444741352" constant="true"/>
+      <parameter id="n_16_7" value="2" constant="true"/>
+      <parameter id="K_16_20" value="1.59684429065318" constant="true"/>
+      <parameter id="n_16_20" value="3" constant="true"/>
+      <parameter id="K_16_2" value="37.3763107866838" constant="true"/>
+      <parameter id="n_16_2" value="3" constant="true"/>
+      <parameter id="K_18_5" value="5.62915224513047" constant="true"/>
+      <parameter id="n_18_5" value="3" constant="true"/>
+      <parameter id="K_18_16" value="18.3099221355826" constant="true"/>
+      <parameter id="n_18_16" value="1" constant="true"/>
+      <parameter id="K_18_11" value="2.84674765192252" constant="true"/>
+      <parameter id="n_18_11" value="2" constant="true"/>
+      <parameter id="K_19_7" value="96.8351854066905" constant="true"/>
+      <parameter id="n_19_7" value="3" constant="true"/>
+      <parameter id="K_19_10" value="2.6339909452989" constant="true"/>
+      <parameter id="n_19_10" value="3" constant="true"/>
+      <parameter id="K_19_11" value="1.59197730952242" constant="true"/>
+      <parameter id="n_19_11" value="2" constant="true"/>
+      <parameter id="K_20_16" value="75.7167026309677" constant="true"/>
+      <parameter id="n_20_16" value="2" constant="true"/>
+      <parameter id="K_20_5" value="2.04682475382868" constant="true"/>
+      <parameter id="n_20_5" value="3" constant="true"/>
+      <parameter id="K_20_4" value="3.28956270831509" constant="true"/>
+      <parameter id="n_20_4" value="2" constant="true"/>
+    </listOfParameters>
+    <listOfRules>
+      <rateRule variable="m1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_1 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_1 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_1 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> p17 </ci>
+                              <ci> n_1_17 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_1_17 </ci>
+                                <ci> n_1_17 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p17 </ci>
+                                <ci> n_1_17 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> K_1_10 </ci>
+                            <ci> n_1_10 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_1_10 </ci>
+                            <ci> n_1_10 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p10 </ci>
+                            <ci> n_1_10 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p7 </ci>
+                        <ci> n_1_7 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_1_7 </ci>
+                        <ci> n_1_7 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p7 </ci>
+                        <ci> n_1_7 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_1 </ci>
+              <ci> m1 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_1 </ci>
+              <ci> m1 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_1 </ci>
+              <ci> p1 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_2 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_2 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_2 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> p6 </ci>
+                              <ci> n_2_6 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_2_6 </ci>
+                                <ci> n_2_6 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p6 </ci>
+                                <ci> n_2_6 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> K_2_13 </ci>
+                            <ci> n_2_13 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_2_13 </ci>
+                            <ci> n_2_13 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p13 </ci>
+                            <ci> n_2_13 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p18 </ci>
+                        <ci> n_2_18 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_2_18 </ci>
+                        <ci> n_2_18 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p18 </ci>
+                        <ci> n_2_18 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_2 </ci>
+              <ci> m2 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_2 </ci>
+              <ci> m2 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_2 </ci>
+              <ci> p2 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m3">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_3 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_3 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_3 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> K_3_6 </ci>
+                              <ci> n_3_6 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_3_6 </ci>
+                                <ci> n_3_6 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p6 </ci>
+                                <ci> n_3_6 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p17 </ci>
+                            <ci> n_3_17 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_3_17 </ci>
+                            <ci> n_3_17 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p17 </ci>
+                            <ci> n_3_17 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p16 </ci>
+                        <ci> n_3_16 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_3_16 </ci>
+                        <ci> n_3_16 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p16 </ci>
+                        <ci> n_3_16 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_3 </ci>
+              <ci> m3 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p3">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_3 </ci>
+              <ci> m3 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_3 </ci>
+              <ci> p3 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m4">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_4 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_4 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_4 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> p5 </ci>
+                              <ci> n_4_5 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_4_5 </ci>
+                                <ci> n_4_5 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p5 </ci>
+                                <ci> n_4_5 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> K_4_9 </ci>
+                            <ci> n_4_9 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_4_9 </ci>
+                            <ci> n_4_9 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p9 </ci>
+                            <ci> n_4_9 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p19 </ci>
+                        <ci> n_4_19 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_4_19 </ci>
+                        <ci> n_4_19 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p19 </ci>
+                        <ci> n_4_19 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_4 </ci>
+              <ci> m4 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p4">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_4 </ci>
+              <ci> m4 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_4 </ci>
+              <ci> p4 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m5">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_5 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_5 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_5 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> p10 </ci>
+                              <ci> n_5_10 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_5_10 </ci>
+                                <ci> n_5_10 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p10 </ci>
+                                <ci> n_5_10 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p18 </ci>
+                            <ci> n_5_18 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_5_18 </ci>
+                            <ci> n_5_18 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p18 </ci>
+                            <ci> n_5_18 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p9 </ci>
+                        <ci> n_5_9 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_5_9 </ci>
+                        <ci> n_5_9 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p9 </ci>
+                        <ci> n_5_9 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_5 </ci>
+              <ci> m5 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p5">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_5 </ci>
+              <ci> m5 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_5 </ci>
+              <ci> p5 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m6">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_6 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_6 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_6 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> p3 </ci>
+                              <ci> n_6_3 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_6_3 </ci>
+                                <ci> n_6_3 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p3 </ci>
+                                <ci> n_6_3 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> K_6_5 </ci>
+                            <ci> n_6_5 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_6_5 </ci>
+                            <ci> n_6_5 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p5 </ci>
+                            <ci> n_6_5 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p7 </ci>
+                        <ci> n_6_7 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_6_7 </ci>
+                        <ci> n_6_7 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p7 </ci>
+                        <ci> n_6_7 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_6 </ci>
+              <ci> m6 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p6">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_6 </ci>
+              <ci> m6 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_6 </ci>
+              <ci> p6 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m7">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_7 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_7 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_7 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> K_7_20 </ci>
+                              <ci> n_7_20 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_7_20 </ci>
+                                <ci> n_7_20 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p20 </ci>
+                                <ci> n_7_20 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p4 </ci>
+                            <ci> n_7_4 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_7_4 </ci>
+                            <ci> n_7_4 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p4 </ci>
+                            <ci> n_7_4 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> K_7_18 </ci>
+                        <ci> n_7_18 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_7_18 </ci>
+                        <ci> n_7_18 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p18 </ci>
+                        <ci> n_7_18 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_7 </ci>
+              <ci> m7 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p7">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_7 </ci>
+              <ci> m7 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_7 </ci>
+              <ci> p7 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m8">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_8 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_8 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_8 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> p4 </ci>
+                              <ci> n_8_4 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_8_4 </ci>
+                                <ci> n_8_4 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p4 </ci>
+                                <ci> n_8_4 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> K_8_15 </ci>
+                            <ci> n_8_15 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_8_15 </ci>
+                            <ci> n_8_15 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p15 </ci>
+                            <ci> n_8_15 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> K_8_10 </ci>
+                        <ci> n_8_10 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_8_10 </ci>
+                        <ci> n_8_10 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p10 </ci>
+                        <ci> n_8_10 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_8 </ci>
+              <ci> m8 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p8">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_8 </ci>
+              <ci> m8 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_8 </ci>
+              <ci> p8 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m9">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_9 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_9 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_9 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> K_9_8 </ci>
+                              <ci> n_9_8 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_9_8 </ci>
+                                <ci> n_9_8 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p8 </ci>
+                                <ci> n_9_8 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> K_9_15 </ci>
+                            <ci> n_9_15 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_9_15 </ci>
+                            <ci> n_9_15 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p15 </ci>
+                            <ci> n_9_15 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> K_9_10 </ci>
+                        <ci> n_9_10 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_9_10 </ci>
+                        <ci> n_9_10 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p10 </ci>
+                        <ci> n_9_10 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_9 </ci>
+              <ci> m9 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p9">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_9 </ci>
+              <ci> m9 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_9 </ci>
+              <ci> p9 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m10">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_10 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_10 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_10 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> K_10_17 </ci>
+                              <ci> n_10_17 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_10_17 </ci>
+                                <ci> n_10_17 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p17 </ci>
+                                <ci> n_10_17 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> K_10_12 </ci>
+                            <ci> n_10_12 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_10_12 </ci>
+                            <ci> n_10_12 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p12 </ci>
+                            <ci> n_10_12 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> K_10_20 </ci>
+                        <ci> n_10_20 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_10_20 </ci>
+                        <ci> n_10_20 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p20 </ci>
+                        <ci> n_10_20 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_10 </ci>
+              <ci> m10 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p10">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_10 </ci>
+              <ci> m10 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_10 </ci>
+              <ci> p10 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m11">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_11 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_11 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_11 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> K_11_5 </ci>
+                              <ci> n_11_5 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_11_5 </ci>
+                                <ci> n_11_5 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p5 </ci>
+                                <ci> n_11_5 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p19 </ci>
+                            <ci> n_11_19 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_11_19 </ci>
+                            <ci> n_11_19 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p19 </ci>
+                            <ci> n_11_19 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p6 </ci>
+                        <ci> n_11_6 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_11_6 </ci>
+                        <ci> n_11_6 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p6 </ci>
+                        <ci> n_11_6 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_11 </ci>
+              <ci> m11 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p11">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_11 </ci>
+              <ci> m11 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_11 </ci>
+              <ci> p11 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m12">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_12 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_12 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_12 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> p2 </ci>
+                              <ci> n_12_2 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_12_2 </ci>
+                                <ci> n_12_2 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p2 </ci>
+                                <ci> n_12_2 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> K_12_20 </ci>
+                            <ci> n_12_20 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_12_20 </ci>
+                            <ci> n_12_20 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p20 </ci>
+                            <ci> n_12_20 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p5 </ci>
+                        <ci> n_12_5 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_12_5 </ci>
+                        <ci> n_12_5 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p5 </ci>
+                        <ci> n_12_5 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_12 </ci>
+              <ci> m12 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p12">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_12 </ci>
+              <ci> m12 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_12 </ci>
+              <ci> p12 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m13">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_13 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_13 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_13 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> K_13_19 </ci>
+                              <ci> n_13_19 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_13_19 </ci>
+                                <ci> n_13_19 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p19 </ci>
+                                <ci> n_13_19 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p5 </ci>
+                            <ci> n_13_5 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_13_5 </ci>
+                            <ci> n_13_5 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p5 </ci>
+                            <ci> n_13_5 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> K_13_2 </ci>
+                        <ci> n_13_2 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_13_2 </ci>
+                        <ci> n_13_2 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p2 </ci>
+                        <ci> n_13_2 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_13 </ci>
+              <ci> m13 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p13">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_13 </ci>
+              <ci> m13 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_13 </ci>
+              <ci> p13 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m14">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_14 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_14 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_14 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> p19 </ci>
+                              <ci> n_14_19 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_14_19 </ci>
+                                <ci> n_14_19 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p19 </ci>
+                                <ci> n_14_19 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> K_14_16 </ci>
+                            <ci> n_14_16 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_14_16 </ci>
+                            <ci> n_14_16 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p16 </ci>
+                            <ci> n_14_16 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> K_14_7 </ci>
+                        <ci> n_14_7 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_14_7 </ci>
+                        <ci> n_14_7 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p7 </ci>
+                        <ci> n_14_7 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_14 </ci>
+              <ci> m14 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p14">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_14 </ci>
+              <ci> m14 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_14 </ci>
+              <ci> p14 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m15">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_15 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_15 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_15 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> p12 </ci>
+                              <ci> n_15_12 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_15_12 </ci>
+                                <ci> n_15_12 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p12 </ci>
+                                <ci> n_15_12 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p5 </ci>
+                            <ci> n_15_5 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_15_5 </ci>
+                            <ci> n_15_5 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p5 </ci>
+                            <ci> n_15_5 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> K_15_1 </ci>
+                        <ci> n_15_1 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_15_1 </ci>
+                        <ci> n_15_1 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p1 </ci>
+                        <ci> n_15_1 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_15 </ci>
+              <ci> m15 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p15">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_15 </ci>
+              <ci> m15 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_15 </ci>
+              <ci> p15 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m16">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_16 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_16 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_16 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> K_16_7 </ci>
+                              <ci> n_16_7 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_16_7 </ci>
+                                <ci> n_16_7 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p7 </ci>
+                                <ci> n_16_7 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> K_16_20 </ci>
+                            <ci> n_16_20 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_16_20 </ci>
+                            <ci> n_16_20 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p20 </ci>
+                            <ci> n_16_20 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p2 </ci>
+                        <ci> n_16_2 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_16_2 </ci>
+                        <ci> n_16_2 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p2 </ci>
+                        <ci> n_16_2 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_16 </ci>
+              <ci> m16 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p16">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_16 </ci>
+              <ci> m16 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_16 </ci>
+              <ci> p16 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m17">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_17 </ci>
+              <ci> alpha0_17 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_17 </ci>
+              <ci> m17 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p17">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_17 </ci>
+              <ci> m17 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_17 </ci>
+              <ci> p17 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m18">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_18 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_18 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_18 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> p5 </ci>
+                              <ci> n_18_5 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_18_5 </ci>
+                                <ci> n_18_5 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p5 </ci>
+                                <ci> n_18_5 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p16 </ci>
+                            <ci> n_18_16 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_18_16 </ci>
+                            <ci> n_18_16 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p16 </ci>
+                            <ci> n_18_16 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p11 </ci>
+                        <ci> n_18_11 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_18_11 </ci>
+                        <ci> n_18_11 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p11 </ci>
+                        <ci> n_18_11 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_18 </ci>
+              <ci> m18 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p18">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_18 </ci>
+              <ci> m18 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_18 </ci>
+              <ci> p18 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m19">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_19 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_19 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_19 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> p7 </ci>
+                              <ci> n_19_7 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_19_7 </ci>
+                                <ci> n_19_7 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p7 </ci>
+                                <ci> n_19_7 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> K_19_10 </ci>
+                            <ci> n_19_10 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_19_10 </ci>
+                            <ci> n_19_10 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p10 </ci>
+                            <ci> n_19_10 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p11 </ci>
+                        <ci> n_19_11 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_19_11 </ci>
+                        <ci> n_19_11 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p11 </ci>
+                        <ci> n_19_11 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_19 </ci>
+              <ci> m19 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p19">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_19 </ci>
+              <ci> m19 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_19 </ci>
+              <ci> p19 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="m20">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> beta_20 </ci>
+              <apply>
+                <plus/>
+                <ci> alpha0_20 </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> alpha0_20 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <apply>
+                            <divide/>
+                            <apply>
+                              <power/>
+                              <ci> K_20_16 </ci>
+                              <ci> n_20_16 </ci>
+                            </apply>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <power/>
+                                <ci> K_20_16 </ci>
+                                <ci> n_20_16 </ci>
+                              </apply>
+                              <apply>
+                                <power/>
+                                <ci> p16 </ci>
+                                <ci> n_20_16 </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p5 </ci>
+                            <ci> n_20_5 </ci>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <power/>
+                            <ci> K_20_5 </ci>
+                            <ci> n_20_5 </ci>
+                          </apply>
+                          <apply>
+                            <power/>
+                            <ci> p5 </ci>
+                            <ci> n_20_5 </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p4 </ci>
+                        <ci> n_20_4 </ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> K_20_4 </ci>
+                        <ci> n_20_4 </ci>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p4 </ci>
+                        <ci> n_20_4 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> gamma_20 </ci>
+              <ci> m20 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="p20">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <ci> k_20 </ci>
+              <ci> m20 </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> delta_20 </ci>
+              <ci> p20 </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+    </listOfRules>
+  </model>
+</sbml>
