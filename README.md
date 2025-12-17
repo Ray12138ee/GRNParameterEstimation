@@ -10,6 +10,8 @@ This repository implements an end-to-end synthetic benchmark for **Gene Regulato
 
 > Scope note: This code focuses on **multi-start optimization**. It does **not** implement profile likelihood or Bayesian sampling.
 
+![project](visualization/overall.png)
+
 ---
 
 ## Repository Structure
